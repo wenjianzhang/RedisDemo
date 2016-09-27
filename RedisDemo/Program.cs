@@ -36,7 +36,7 @@ namespace RedisDemo
             {
                 bool bl = db.StringSet(key, "");
             }
-            object str = db.StringGet(key).IsNullOrEmpty;
+            object str = db.StringGet(key);
             return str;
         }
 
